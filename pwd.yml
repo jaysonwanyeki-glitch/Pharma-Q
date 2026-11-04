@@ -82,6 +82,10 @@ services:
           echo "Site frontend already exists, skipping creation";
         else
           bench new-site --mariadb-user-host-login-scope='%' --admin-password=admin --db-root-username=root --db-root-password=admin --install-app erpnext --set-default frontend;
+          echo "sites/common_site_config.json found";
+          cp /root/demo-fixtures.json sites/apps/;
+          bench import-fixtures sites/apps/demo-fixtures.json;
+          rm sites/apps/demo-fixtures.json;
         fi;
 
   db:

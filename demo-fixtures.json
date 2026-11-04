@@ -1,0 +1,214 @@
+{
+  "doctype": "System Settings",
+  "data": {
+    "company_default": "Acme Corporation",
+    "default_currency": "USD",
+    "allow_printing_in_portrait": 1,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_username": "demo@example.com",
+    "smtp_password": "demo123",
+    "smtp_use_tls": 1,
+    "time_zone": "UTC",
+    "date_format": "DD/MM/YYYY",
+    "time_of_day": "HH:mm:ss",
+    "week_start_date": "Monday",
+    "fetch_remote_images": 1,
+    "allow_negative_stocks": 0,
+    "stop_realtime_loop_on_user_logout": 1,
+    "enabled_metrics": []
+  }
+},
+{
+  "doctype": "Company",
+  "data": {
+    "company_name": "Acme Corporation",
+    "abbr": "ACC",
+    "default_currency": "USD",
+    "country": "United States",
+    "timezone": "UTC",
+    "language": "English",
+    "color": "#2b5b84",
+    "is_group": 0,
+    "print_heading": "Acme Corporation",
+    "print_format": "Standard",
+    "abbr_font_size": 12,
+    "address_line1": "123 Main Street",
+    "address_line2": "Suite 100",
+    "city": "New York",
+    "state": "NY",
+    "pincode": "10001",
+    "phone": "+1 212-555-1234",
+    "email": "info@acme.com",
+    "fax": "+1 212-555-5678",
+    "website": "https://acme.com"
+  }
+},
+{
+  "doctype": "User",
+  "data": {
+    "email": "admin@example.com",
+    "first_name": "Admin",
+    "last_name": "User",
+    "user_type": "System User",
+    "role_profile": "System Manager",
+    "location": "New York",
+    "mobile_no": "+1 212-555-0000"
+  }
+},
+{
+  "doctype": "Role",
+  "data": [
+    {
+      "role_name": "System Manager",
+      "described_as": "Has access to all features and settings"
+    },
+    {
+      "role_name": "Sales User",
+      "described_as": "Can create and edit Sales Documents"
+    },
+    {
+      "role_name": "Accounts User",
+      "described_as": "Can create and edit Accounting Documents"
+    }
+  ]
+},
+{
+  "doctype": "Address",
+  "data": {
+    "address_type": "Billing",
+    "address_line1": "123 Main Street",
+    "address_line2": "Suite 100",
+    "city": "New York",
+    "state": "NY",
+    "pincode": "10001",
+    "country": "United States",
+    "link_name": "Acme Corporation",
+    "is_primary": 1
+  }
+},
+{
+  "doctype": "Contact",
+  "data": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@acme.com",
+    "phone": "+1 212-555-0100",
+    "is_primary_contact": 1,
+    "link_name": "Acme Corporation",
+    "link_type": "Company"
+  }
+},
+{
+  "doctype": "Item",
+  "data": {
+    "item_code": "ITEM-001",
+    "item_name": "Sample Product",
+    "description": "This is a sample item for demonstration purposes",
+    "item_group": "All Item Groups",
+    "valuation_method": "Moving Average",
+    "stock_uom": "Nos",
+    "is_stock_item": 1,
+    "has_variants": 0,
+    "image": ""
+  }
+},
+{
+  "doctype": "Sales Invoice",
+  "data": {
+    "customer": "Acme Corporation",
+    "company": "Acme Corporation",
+    "transaction_date": "2024-01-15",
+    "due_date": "2024-02-15",
+    "is_pos": 1,
+    "pos_profile": "Standard POS",
+    "items": [
+      {
+        "item_code": "ITEM-001",
+        "item_name": "Sample Product",
+        "qty": 2,
+        "rate": 100,
+        "amount": 200
+      }
+    ],
+    "total": 200,
+    "grand_total": 215,
+    "rounded_total": 215,
+    "taxes_and_charges": [],
+    "rounded_total": 215,
+    "mode_of_payment": "Cash",
+    "paid_amount": 215,
+    "outstanding_amount": 0
+  }
+},
+{
+  "doctype": "Purchase Order",
+  "data": {
+    "supplier": "Acme Corporation",
+    "company": "Acme Corporation",
+    "transaction_date": "2024-01-10",
+    "delivery_date": "2024-02-10",
+    "items": [
+      {
+        "item_code": "ITEM-001",
+        "item_name": "Sample Product",
+        "qty": 10,
+        "rate": 50,
+        "amount": 500
+      }
+    ],
+    "total": 500,
+    "grand_total": 525,
+    "taxes": [
+      {
+        "charge_type": "IGST",
+        "tax_rate": 5,
+        "tax_amount": 25
+      }
+    ],
+    "rounded_total": 525,
+    "status": "Open",
+    "mode_of_payment": "Bank Transfer",
+    "paid_amount": 0,
+    " outstanding_amount": 525
+  }
+},
+{
+  "doctype": "Employee",
+  "data": {
+    "employee_name": "John Doe",
+    "employee_type": "Employee",
+    "department": "Sales",
+    "designation": "Sales Manager",
+    "date_of_joining": "2024-01-01",
+    "date_of_birth": "1990-01-01",
+    "gender": "Male",
+    "status": "Active",
+    "company": "Acme Corporation",
+    "bank_account": "New Bank Account",
+    "bank_name": "New Bank",
+    "pan": "ABCDE1234F",
+    "aadhaar": "123456789012",
+    "uannumber": "123456789012",
+    "blood_group": "O+",
+    "relieving_date": ""
+  }
+},
+{
+  "doctype": "Sales Team",
+  "data": {
+    "parent": "Sales Invoice - 1",
+    "parenttype": "Sales Invoice",
+    "sales_member": "Administrator",
+    "sales_percentage": 100
+  }
+},
+{
+  "doctype": "Purchase Team",
+  "data": {
+    "parent": "Purchase Order - 1",
+    "parenttype": "Purchase Order",
+    "purchase_member": "Administrator",
+    "purchase_percentage": 100
+  }
+}
