@@ -172,17 +172,17 @@ importers:
   .:
     devDependencies:
       mermaid:
-        specifier: 12.2.0
-        version: 12.2.0
+        specifier: 12.3.0
+        version: 12.3.0
       vitepress:
         specifier: 2.0.0-alpha.20
         version: 2.0.0-alpha.20(postcss@8.5.31)
       vitepress-mermaid-viewer:
         specifier: 0.5.2
-        version: 0.5.2(mermaid@12.2.0)(vitepress@2.0.0-alpha.20(postcss@8.5.31))(vue@3.5.44)
+        version: 0.5.2(mermaid@12.3.0)(vitepress@2.0.0-alpha.20(postcss@8.5.31))(vue@3.5.44)
       vitepress-sidebar:
-        specifier: 1.40.0
-        version: 1.40.0
+        specifier: 1.41.0
+        version: 1.41.0
 
 packages:
 
@@ -833,8 +833,8 @@ packages:
   dompurify@3.4.17:
     resolution: {integrity: sha512-B/pSlYVHQ58kqISD/yDjuJ1yfzI34m1gF4lAod2bwSRhiN4K5Cl3H8Af7hqB2PmTL911tdEudnnXn5FnhRoz0w==}
 
-  elkjs@0.9.3:
-    resolution: {integrity: sha512-f/ZeWvW/BCXbhGEf1Ujp29EASo/lk1FDnETgNKwJrsVvGZhUWCZyg3xLJjAsxfOmt8KjswHmI5EwCQcPMpOYhQ==}
+  elkjs@0.12.1:
+    resolution: {integrity: sha512-IhMYKHE4S2vtx0QrhBP3lYOIKDeIiJXBrdq9MGYkuB8ZHqhrBnHNfSUndjXFewrX1CPK8chwq+2NA0K0hliYuw==}
 
   entities@7.0.1:
     resolution: {integrity: sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==}
@@ -1029,8 +1029,8 @@ packages:
   mdast-util-to-hast@13.2.1:
     resolution: {integrity: sha512-cctsq2wp5vTsLIcaymblUriiTcZd0CwWtCbLvrOzYCDZoWyMNV8sZ7krj09FSnsiJi3WVsHLM4k6Dq/yaPyCXA==}
 
-  mermaid@12.2.0:
-    resolution: {integrity: sha512-w7nr/SFrLO7BaVTs3dQTvYSV6nYSBj0Yy9DjBhsIJtAcHqRzXSq4Pg32ujHZ/AdWsAMNEvvhbm5dt9E2tOiHzw==}
+  mermaid@12.3.0:
+    resolution: {integrity: sha512-4113TdXeLAsMruJ79OpFL5O8+LTFXhQqZ260rF3tgUmiNAtRm4Uume04I+65PRN6yZ69J4f8rVYWW8zRk65UYw==}
     engines: {node: '>=22.12.0'}
 
   micromark-util-character@2.1.1:
@@ -1194,10 +1194,6 @@ packages:
   unist-util-visit@5.1.0:
     resolution: {integrity: sha512-m+vIdyeCOpdr/QeQCu2EzxX/ohgS8KbnPDgFni4dQsfSCtpz8UqDyY5GjRru8PDKuYn7Fq19j1CQ+nJSsGKOzg==}
 
-  uuid@14.0.3:
-    resolution: {integrity: sha512-Sc5u1VVln93y1Xnz4R+CunOZc7R9LUcTmhj7Rc7Eg3HVcf7rVn2FOoa812fe0W8p3jD7xeoGSYbfqCGGH2B6xw==}
-    hasBin: true
-
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
 
@@ -1255,8 +1251,8 @@ packages:
       vitepress: '>=1.0.0'
       vue: ^3.0.0
 
-  vitepress-sidebar@1.40.0:
-    resolution: {integrity: sha512-HwcZHixwwnLSbcDAbh+TRISX0zNerzL4UUpVlIEjbQleae095lfOQEFtB0Jkbxajy2yUiluH+TgLTLVMOj7+Tw==}
+  vitepress-sidebar@1.41.0:
+    resolution: {integrity: sha512-nL+jWlSgmn0Ssg8/PBcZmwbJ2vBFFg3nur+pX1qWihuP/ihTCI12Z/U2cFG54e/jTsWAGLm0KVfaid0NpA/jsQ==}
     engines: {node: '>=20.0.0'}
 
   vitepress@2.0.0-alpha.20:
@@ -1925,7 +1921,7 @@ snapshots:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
-  elkjs@0.9.3: {}
+  elkjs@0.12.1: {}
 
   entities@7.0.1: {}
 
@@ -2089,7 +2085,7 @@ snapshots:
       unist-util-visit: 5.1.0
       vfile: 6.0.3
 
-  mermaid@12.2.0:
+  mermaid@12.3.0:
     dependencies:
       '@braintree/sanitize-url': 7.1.2
       '@iconify/utils': 3.1.7
@@ -2105,7 +2101,7 @@ snapshots:
       dagre-d3-es: 7.0.14
       dayjs: 1.11.23
       dompurify: 3.4.17
-      elkjs: 0.9.3
+      elkjs: 0.12.1
       es-toolkit: 1.52.0
       katex: 0.18.10
       khroma: 2.1.0
@@ -2113,7 +2109,6 @@ snapshots:
       roughjs: 4.6.6
       stylis: 4.4.0
       ts-dedent: 2.3.0
-      uuid: 14.0.3
 
   micromark-util-character@2.1.1:
     dependencies:
@@ -2293,8 +2288,6 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  uuid@14.0.3: {}
-
   vfile-message@4.0.3:
     dependencies:
       '@types/unist': 3.0.3
@@ -2315,13 +2308,13 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-mermaid-viewer@0.5.2(mermaid@12.2.0)(vitepress@2.0.0-alpha.20(postcss@8.5.31))(vue@3.5.44):
+  vitepress-mermaid-viewer@0.5.2(mermaid@12.3.0)(vitepress@2.0.0-alpha.20(postcss@8.5.31))(vue@3.5.44):
     dependencies:
-      mermaid: 12.2.0
+      mermaid: 12.3.0
       vitepress: 2.0.0-alpha.20(postcss@8.5.31)
       vue: 3.5.44
 
-  vitepress-sidebar@1.40.0:
+  vitepress-sidebar@1.41.0:
     dependencies:
       glob: 13.0.6
       gray-matter: 4.0.3
